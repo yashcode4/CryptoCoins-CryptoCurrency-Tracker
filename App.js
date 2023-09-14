@@ -3,8 +3,6 @@ const app = express()
 const port = 3000
 const path = require("path") // For join the path.
 
-app.use(express.urlencoded()); // Urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. It recognize the input coming from the form-filling.
-
 function resData() {
   req.body.coinName;
 }
