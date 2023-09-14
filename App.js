@@ -6,9 +6,9 @@ const path = require("path") // For join the path.
 function resData() {
   req.body.coinName;
 }
+
+// Tell express static files located inside 'public' folder and join the path it with directory path.
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/public', express.static('public')); // The app.use() function is used to mount the specified middleware function(s) like (express.static) at the path which is being specified like (/public).
- // "/public" - use this path for express.static('public') middleware function. Express can use "public" folder for every static files.
 
 // get to the user.
 app.get('/', (req, res) => {
