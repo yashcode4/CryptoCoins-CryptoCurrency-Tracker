@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
-const port = 3000
 const path = require("path") // For join the path.
+const dotenv = require("dotenv"); // Importing dotenv
+
+dotenv.config({
+  path: "./.env"
+})
 
 function resData() {
   req.body.coinName;
@@ -21,8 +25,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html')); // For sending file, we have to join current directory to the views directory and send its "index.html" file.
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on http://localhost:${port}`)
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening on http://localhost:${process.env.PORT}`)
 })
 
 
