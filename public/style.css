@@ -1,0 +1,447 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400,700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17181c;
+}
+
+/* HeadBar */
+.headBar {
+    font-size: 12px;
+    color: #00fffb;
+}
+
+/* Navbar */
+.nav {
+    height: 55px;
+    background-color: #131315;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0px 5px #3a82ee;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+}
+
+/* Menu */
+.nav ul {
+    display: flex;
+    margin-left: 100px;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+
+
+/* Section - 1 2cardsData */
+
+/* Section 1 */
+.coinItem {
+    height: 580px;
+    background-color: #202124;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    /* border: 2px solid white; */
+}
+
+.coinItemBox {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 2px solid orange; */
+    padding: 15px 0px;
+}
+
+/* newsBox */
+.newsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 450px;
+    width: 460px;
+    /* border: 2px solid red; */
+    background-color: #121212;
+    border-radius: 5px;
+    overflow-y: scroll;
+    margin: 10px 0;
+}
+
+.itemBox {
+    /* border: 2px solid yellow; */
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.itemBox:hover {
+    background-color: #313154;
+    border-radius: 10px 10px;
+}
+
+.img img {
+    border-radius: 10px 0 0 10px;
+}
+
+.infoBox {
+    width: 100%;
+    margin: 0 5px;
+}
+
+.title {
+    padding-top: 0;
+    height: 50px;
+    /* To limit the character length of the title */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.source {
+    width: 100%;
+
+}
+
+.source-name {
+    display: inline;
+}
+
+.source-link {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+.source-link a {
+    color: rgb(0, 195, 255);
+}
+
+/* Box2 */
+.Box2 {
+    display: flex;
+    height: 450px;
+    width: 800px;
+    background-color: #121212;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.chartList {
+    height: 100%;
+    width: 230px;
+    overflow-y: scroll;
+}
+
+.chartMap {
+    height: 100%;
+    width: 565px;
+}
+
+.itemBoxChart {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+}
+
+.itemBoxChart:hover {
+    background-color: #313154;
+    border-radius: 5px 5px;
+    cursor: pointer;
+}
+
+/* Section 2 */
+
+/* Lists */
+.coinList {
+    padding-bottom: 70px;
+    background-color: #202124;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+/* List items */
+
+/* Footer */
+.footer {
+    padding: 10px;
+    font-size: 13px;
+    background-color: #131315;
+    color: white;
+    text-align: center;
+}
+
+/* Fonts */
+.fonts {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Colors */
+:root {
+    --primary: #16c784;
+    --primary-dark: #064531;
+    --business: #3a82ee;
+    --light: #eee;
+    --gray: #888;
+    --dark: #313154;
+    --danger: #ea3943;
+    --white: #fff;
+
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bearish {
+    color: var(--danger);
+}
+
+.bullish {
+    color: var(--primary);
+}
+
+/* New CSS For List Data */
+/* table */
+table {
+    width: 1315px;
+    font-size: 15px;
+    /* border: 1px solid grey; */
+    background-color: #121212;
+    margin: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: none;
+}
+
+/* For Table Data */
+table tbody td>p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* For Table head */
+table thead th {
+    font-weight: lighter;
+
+}
+
+/* table head */
+table thead#thead {
+    height: 40px;
+    background-color: #121212;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    /* Box shadow for glowing effect */
+    box-shadow: 0 10px 10px -8px #3a82ee;
+
+}
+
+/* Head Boxes */
+/* hash_head */
+table thead th.hashBox {
+    padding-left: 30px;
+
+}
+
+/* coin_head */
+table thead th.coinBox {
+    padding-left: 70px;
+
+}
+
+table thead th.coinBox p {
+    width: 150px;
+}
+
+/* price_head */
+table thead th.priceBox {
+    width: 130px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* marketCapBox_head */
+table thead th.marketCapBox {
+    width: 120px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* volume24hBox_head */
+table thead th.volume24hBox {
+    width: 120px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* circulatingBox_head */
+table thead th.circulatingBox {
+    width: 210px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* oneHBox_head */
+table thead th.oneHBox {
+    width: 80px;
+    padding: 0 10px;
+    text-align: end;
+}
+
+/* oneDBox_head */
+table thead th.oneDBox {
+    width: 80px;
+    padding: 0 10px;
+    text-align: end;
+}
+
+/* oneWBox_head */
+table thead th.oneWBox {
+    width: 80px;
+    padding: 0 10px;
+    text-align: end;
+}
+
+/* sevenDChart_head */
+table thead th.sevenDChart {
+    width: 200px;
+    padding: 0 5px;
+    text-align: end;
+    padding-right: 50px;
+}
+
+/* table body */
+
+/* list syle styling css */
+table tbody tr.list-items2 {
+    height: 70px;
+    width: 97%;
+    margin: 0 auto;
+    transition: .2s ease-in-out;
+    /* border: 2px solid grey; */
+
+}
+
+table tbody tr.list-items2:hover {
+    cursor: pointer;
+    background-color: #383838;
+    position: relative;
+}
+
+/* Table data boxes */
+/* hash_head */
+table tbody td.hashBox p {
+    padding-left: 30px;
+    margin: 0;
+}
+
+/* coinBox */
+table tbody td.coinBox {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: light;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+/* image */
+table tbody td.coinBox img {
+    height: 40px;
+    width: 40px;
+}
+
+/* para */
+table tbody td.coinBox p {
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+/* priceBox */
+table tbody td.priceBox {
+    width: 100px;
+    padding: 0 5px;
+    text-align: end;
+    font-weight: light;
+
+}
+
+/* marketCapBox_body */
+table tbody td.marketCapBox {
+    width: 120px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* volume24hBox_body */
+table tbody td.volume24hBox {
+    width: 120px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* circulatingBox_body */
+table tbody td.circulatingBox {
+    width: 210px;
+    padding: 0 5px;
+    text-align: end;
+}
+
+/* oneHBox_body */
+table tbody td.oneHBox {
+    width: 80px;
+    padding: 0 10px;
+    text-align: end;
+}
+
+/* oneDBox_hbody*/
+table tbody td.oneDBox {
+    width: 80px;
+    padding: 0 10px;
+    text-align: end;
+}
+
+/* oneWBox_hbody*/
+table tbody td.oneWBox {
+    width: 80px;
+    padding: 0 10px;
+    text-align: end;
+}
+
+/* sevenDChart_body */
+table tbody td.sevenDChart {
+    width: 180px;
+    padding-left: 30px;
+}

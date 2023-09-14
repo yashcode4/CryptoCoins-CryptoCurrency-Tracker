@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Tracker and Map</title>
+  <link rel="stylesheet" href="../public/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav fonts">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../public/logo.png" alt="Not Found">
+      <h3>CryptoCoins</h3>
+    </div>
+    <!-- menu -->
+    <ul>
+      <li>Coins: <span id="activecoins" class="headBar"></span></li>
+      <li>Markets: <span id="markets" class="headBar"></span></li>
+      <li>Market Cap: <span id="totalMarketCap" class="headBar"></span></li>
+      <li>Volume: <span id="totalVolume" class="headBar"></span></li>
+      <li>Market Cap %: <span id="totalMarketCapPer" class="headBar"></span></li>
+      <li>Bitcoin Dominance: <span id="bitDom" class="headBar"></span></li>
+    </ul>
+  </nav>
+  <!-- First Section -->
+  <section class="coinItem fonts">
+    <h2>Cryptocurrency Prices & Real-Time Data | CryptoCoins</h2>
+    <h5>The global crypto market cap is <span id="totalMarketCap2" class="headBar"></span> Trillion, a <span id="totalMarketCapPer2" class="headBar"></span> decrease over the last day.</h5>
+    <div class="coinItemBox">
+      <div class="newsBoxultimate">
+        <span class="trendingNews" style="font-size: 18px; padding-bottom: 5px">Trending 🔥</span>
+        <div id="newsBox" class="newsBox">
+          <!-- Your data will populate here -->
+        </div>
+      </div>
+      <div class="chartBoxultimate">
+        <span class="trendingNews" style="font-size: 18px; padding-bottom: 5px">Price over the week 💰</span>
+
+        <div class="Box2">
+          <div class="chartList" id="chartList"></div>
+          <div class="chartMap" id="chartMap" >
+          
+        </div>
+        </div>
+      </div>
+  </div>
+   
+  </section>
+  <!-- <hr> -->
+  <!-- Second Section - For listing list -->
+  <section class="coinList fonts">
+      <h2>Top Cryptocurrencies</h2>
+      <h5>Results were generated a few mins ago. Pricing data is updated frequently. Currency in USD.</h5>
+      <table>
+        <thead id="thead">
+          <tr>
+            <th class="hashBox">#</th>
+            <th class="coinBox">Coin</th>
+            <th class="priceBox">Price</th>
+            <th class="marketCapBox">Market Cap</th>
+            <th class="volume24hBox">Volume 24h</th>
+            <th class="circulatingBox">Circulating Supply</th>
+            <th class="oneHBox">1h %</th>
+            <th class="oneDBox">24h %</th>
+            <th class="oneWBox">1w %</th>
+            <th class="sevenDChart">7d chart</th>
+          </tr>
+        </thead>
+        <tbody id="tbody" style="height: 100px;">
+          <!-- table data (td) - Table data will populate here. -->
+        </tbody>
+      </table>
+  </section>
+  <footer class="footer fonts">
+    Website Made By Yash | Copyright <span>&copy</span> 2023
+  </footer>
+
+</body>
+<script src="../public/main.js"></script>
+
+</html>
