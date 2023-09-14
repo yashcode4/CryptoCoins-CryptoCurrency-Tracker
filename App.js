@@ -8,7 +8,7 @@ app.use(express.urlencoded()); // Urlencoded() is a method inbuilt in express to
 function resData() {
   req.body.coinName;
 }
-app.use('/public', express.static('public')); // The app.use() function is used to mount the specified middleware function(s) like (express.static) at the path which is being specified like (/public).
+app.use('/public', express.static('public/')); // The app.use() function is used to mount the specified middleware function(s) like (express.static) at the path which is being specified like (/public).
  // "/public" - use this path for express.static('public') middleware function. Express can use "public" folder for every static files.
 
 // get to the user.
