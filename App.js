@@ -6,8 +6,14 @@ const path = require("path") // For join the path.
 function resData() {
   req.body.coinName;
 }
-app.use('/public', express.static('public/')); // The app.use() function is used to mount the specified middleware function(s) like (express.static) at the path which is being specified like (/public).
+app.use('/public', express.static('public')); // The app.use() function is used to mount the specified middleware function(s) like (express.static) at the path which is being specified like (/public).
  // "/public" - use this path for express.static('public') middleware function. Express can use "public" folder for every static files.
+
+// Serve CSS files with 'text/css' MIME type.
+app.use('/css', express.static('public/css', { 'extensions': ['css'] }));
+
+// Serve JavaScript files with 'application/javascript' MIME type.
+app.use('/js', express.static('public/js', { 'extensions': ['js'] }));
 
 // get to the user.
 app.get('/', (req, res) => {
