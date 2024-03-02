@@ -269,7 +269,7 @@ table thead#thead {
 /* Head Boxes */
 /* hash_head */
 table thead th.hashBox {
-    padding-left: 30px;
+    padding-left: 10px;
 
 }
 
@@ -361,6 +361,7 @@ table tbody tr.list-items2:hover {
 /* Table data boxes */
 /* hash_head */
 table tbody td.hashBox p {
+    width: 80px;
     padding-left: 30px;
     margin: 0;
 }
@@ -373,8 +374,8 @@ table tbody td.coinBox {
     vertical-align: middle;
     font-size: 15px;
     font-weight: light;
-    margin-top: 14px;
-    margin-left: 20px;
+    padding-top: 14px;
+    padding-left: 20px;
 }
 
 /* image */
@@ -391,7 +392,7 @@ table tbody td.coinBox p {
 
 /* priceBox */
 table tbody td.priceBox {
-    width: 100px;
+    width: 150px;
     padding: 0 5px;
     text-align: end;
     font-weight: light;
@@ -400,21 +401,21 @@ table tbody td.priceBox {
 
 /* marketCapBox_body */
 table tbody td.marketCapBox {
-    width: 120px;
+    width: 150px;
     padding: 0 5px;
     text-align: end;
 }
 
 /* volume24hBox_body */
 table tbody td.volume24hBox {
-    width: 120px;
+    width: 150px;
     padding: 0 5px;
     text-align: end;
 }
 
 /* circulatingBox_body */
 table tbody td.circulatingBox {
-    width: 210px;
+    width: 230px;
     padding: 0 5px;
     text-align: end;
 }
@@ -428,20 +429,20 @@ table tbody td.oneHBox {
 
 /* oneDBox_hbody*/
 table tbody td.oneDBox {
-    width: 80px;
+    width: 120px;
     padding: 0 10px;
     text-align: end;
 }
 
 /* oneWBox_hbody*/
 table tbody td.oneWBox {
-    width: 80px;
+    width: 120px;
     padding: 0 10px;
     text-align: end;
 }
 
 /* sevenDChart_body */
 table tbody td.sevenDChart {
-    width: 180px;
+    width: 190px;
     padding-left: 30px;
 }
